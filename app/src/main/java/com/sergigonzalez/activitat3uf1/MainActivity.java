@@ -31,7 +31,12 @@ public class MainActivity extends AppCompatActivity
         String group = prefs.getString("group", "A1");
         String font = prefs.getString("font", "Sans-serif");
         TextView textoBienvenida = (TextView) findViewById(R.id.textview);
-        textoBienvenida.setText("Bienvenido/a " + name);
+        TextView textoProfesor = (TextView) findViewById(R.id.textViewProf);
+        TextView textoAsignatura = (TextView)findViewById(R.id.textViewAss);
+        TextView textoHoraInicio = (TextView)findViewById(R.id.textViewHii);
+        TextView textHoraFin = (TextView) findViewById(R.id.textViewHFf);
+        textoBienvenida.setText("Bienvenido/a " + name + "del grupo " + group);
+
 
         switch (colour)
         {

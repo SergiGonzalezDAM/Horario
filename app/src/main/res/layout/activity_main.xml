@@ -14,5 +14,85 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        android:id="@+id/textview"/>
+        android:id="@+id/textview"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="Asignatura:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="62dp"
+        android:id="@+id/textViewAsignatura" />
+
+    <TextView
+        android:text="Profesor:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAsignatura"
+        android:layout_alignLeft="@+id/textViewAsignatura"
+        android:layout_alignStart="@+id/textViewAsignatura"
+        android:layout_marginTop="39dp"
+        android:id="@+id/textViewProfe" />
+
+    <TextView
+        android:text="Hora inicio:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/textViewHI"
+        android:layout_below="@+id/textViewProfe"
+        android:layout_alignLeft="@+id/textViewProfe"
+        android:layout_alignStart="@+id/textViewProfe" />
+
+    <TextView
+        android:text="Hora fin:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHI"
+        android:layout_alignLeft="@+id/textViewHI"
+        android:layout_alignStart="@+id/textViewHI"
+        android:layout_marginTop="48dp"
+        android:id="@+id/textViewHF" />
+
+    <TextView
+        android:text="No disponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewAsignatura"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewAss" />
+
+    <TextView
+        android:text="No disponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewProfe"
+        android:layout_alignLeft="@+id/textViewAss"
+        android:layout_alignStart="@+id/textViewAss"
+        android:id="@+id/textViewProf" />
+
+    <TextView
+        android:text="No disponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewHI"
+        android:layout_alignLeft="@+id/textViewProf"
+        android:layout_alignStart="@+id/textViewProf"
+        android:id="@+id/textViewHii" />
+
+    <TextView
+        android:text="No disponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewHF"
+        android:layout_alignLeft="@+id/textViewHii"
+        android:layout_alignStart="@+id/textViewHii"
+        android:id="@+id/textViewHFf" />
 </RelativeLayout>
