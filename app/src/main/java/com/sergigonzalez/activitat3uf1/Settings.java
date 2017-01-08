@@ -42,6 +42,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener
             editor.putString("colour",colour.getSelectedItem().toString());
             editor.putString("font",font.getSelectedItem().toString());
             editor.commit();
+            System.exit(0);
         }
     }
 }
